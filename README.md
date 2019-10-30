@@ -3,7 +3,7 @@
 ## How to run the project
 
 1. Clone this repository to your computer.
-2. Open Terminal.
+2. Open Terminal and enter to the project repository .
 3. Run 'npm i'.
 4. Run 'ng serve'.
 5. the project url is 'http://localhost:4200/'.
