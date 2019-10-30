@@ -1,5 +1,13 @@
 # ArcGISApp
 
+## How to run the project
+
+1. Clone this repository to your computer.
+2. Open Terminal.
+3. Run 'npm i'.
+4. Run 'ng serve'.
+5. the project url is 'http://localhost:4200/'.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.15.
 
 ## Development server
