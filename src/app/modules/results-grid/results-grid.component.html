@@ -1,0 +1,22 @@
+<div *ngIf="loading" class="text-center">
+  <div class="spinner-border mt-5" style="width: 5rem; height: 5rem;" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+<div *ngIf="!loading">
+  <table class="table table-dark">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th *ngFor="let keyValPair of currentDataFields[0] | keyvalue;"  scope="col">{{keyValPair.key}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="dataRow" *ngFor="let field of currentDataFields; let rowIndex = index" (click)="handleClick(rowIndex)">
+      <th scope="row">{{rowIndex}}</th>
+      <td *ngFor="let keyValPair of field | keyvalue">{{keyValPair.value}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
